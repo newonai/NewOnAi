@@ -17,8 +17,8 @@ const Layout = () => {
 
       <nav className='w-full px-8 min-h-14 flex items-center justify-between border-b border-theme bg-theme-surface-secondary'>
         <img className='cursor-pointer w-20 sm:w-20' src={assets.logo} alt="" onClick={()=>navigate('/')} />
-      {/* Centered multicolor title */}
-      <div className='absolute left-1/2 -translate-x-1/2 pointer-events-none select-none'>
+      {/* Centered multicolor title - hidden on mobile */}
+      <div className='absolute left-1/2 -translate-x-1/2 pointer-events-none select-none hidden sm:block'>
         <h1 className='text-lg sm:text-xl md:text-2xl font-semibold tracking-tight'>
           <span className='text-red-400'>N</span>
           <span className='text-blue-400'>e</span>
