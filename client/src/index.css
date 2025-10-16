@@ -108,6 +108,11 @@ body {
   background-color: var(--color-active);
 }
 
+/* Sidebar background utility (uses theme sidebar var) */
+.bg-theme-sidebar-bg {
+  background-color: var(--color-sidebar-bg);
+}
+
 /* Hero animated background visuals */
 .hero-bg-gradient{
   position: absolute;
