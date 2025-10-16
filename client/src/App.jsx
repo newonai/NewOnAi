@@ -13,26 +13,29 @@ import Community from './pages/Community'
 import { useAuth } from '@clerk/clerk-react'
 import { useEffect } from 'react'
 import {Toaster} from 'react-hot-toast'
+import { ThemeProvider } from './contexts/ThemeContext'
 
 const App = () => {
 
   return (
-    <div>
-      <Toaster />
-      <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/ai' element={<Layout />}>
-          <Route index element={<Dashboard/>} />
-          <Route path='write-article' element={<WriteArticle/>} />
-          <Route path='blog-titles' element={<BlogTitles/>} />
-          <Route path='generate-images' element={<GenerateImages/>} />
-          <Route path='remove-background' element={<RemoveBackground/>} />
-          <Route path='remove-object' element={<RemoveObject/>} />
-          <Route path='review-resume' element={<ReviewResume/>} />
-          <Route path='community' element={<Community/>} />
-        </Route>
-      </Routes>
-    </div>
+    <ThemeProvider>
+      <div className="bg-theme-background text-theme-primary min-h-screen transition-colors duration-300">
+        <Toaster />
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/ai' element={<Layout />}>
+            <Route index element={<Dashboard/>} />
+            <Route path='write-article' element={<WriteArticle/>} />
+            <Route path='blog-titles' element={<BlogTitles/>} />
+            <Route path='generate-images' element={<GenerateImages/>} />
+            <Route path='remove-background' element={<RemoveBackground/>} />
+            <Route path='remove-object' element={<RemoveObject/>} />
+            <Route path='review-resume' element={<ReviewResume/>} />
+            <Route path='community' element={<Community/>} />
+          </Route>
+        </Routes>
+      </div>
+    </ThemeProvider>
   )
 }
 

@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
         <div className="flex-1 flex items-start md:justify-end gap-20">
             <div>
-                <h2 className="font-semibold mb-5 text-gray-800">Company</h2>
+                <h2 className="font-semibold mb-5 text-black-800">Company</h2>
                 <ul className="text-sm space-y-2">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About us</a></li>
@@ -22,7 +22,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div>
-                <h2 className="font-semibold text-gray-800 mb-5">Subscribe to our newsletter</h2>
+                <h2 className="font-semibold text-black-800 mb-5">Subscribe to our newsletter</h2>
                 <div className="text-sm space-y-2">
                     <p>The latest news, articles, and resources, sent to your inbox weekly.</p>
                     <div className="flex items-center gap-2 pt-4">
